@@ -1,0 +1,41 @@
+{
+  "siteTitle": "Antonis Kartapanis",
+  "siteUrl": "https://example.com/",
+  "brand": "Antonis Kartapanis",
+  "brandMark": "AK",
+  "home": "index.html",
+  "favicon": "assets/tamu-atm-favicon.svg",
+  "stylesheet": "styles.css",
+  "ogImage": "assets/og-card.png",
+  "defaultDescription": "Antonis Kartapanis — Associate Professor of Accounting at the Mays Business School, Texas A&M University. Research on securities litigation, fraud, and misreporting.",
+  "pages": [
+    {
+      "label": "Home",
+      "title": "Home",
+      "output": "index.html",
+      "source": "content/index.html",
+      "description": "Antonis Kartapanis — Associate Professor of Accounting at the Mays Business School, Texas A&M University. Research on securities litigation, fraud, and misreporting."
+    },
+    {
+      "label": "Research",
+      "title": "Research",
+      "output": "research.html",
+      "source": "research-data",
+      "description": "Publications, accepted papers, and selected working papers by Antonis Kartapanis on securities litigation, fraud, and the intersection of law and accounting."
+    },
+    {
+      "label": "Biography",
+      "title": "Biography",
+      "output": "biography.html",
+      "source": "content/biography.html",
+      "description": "Biography of Antonis Kartapanis: from Limassol, Cyprus to UT Austin, Deloitte, and the James Benjamin Department of Accounting at Texas A&M University."
+    },
+    {
+      "label": "CV",
+      "title": "CV",
+      "output": "cv.html",
+      "source": "content/cv.html",
+      "description": "Curriculum vitae of Antonis Kartapanis, Associate Professor of Accounting at the Mays Business School, Texas A&M University."
+    }
+  ]
+}

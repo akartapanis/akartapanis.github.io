@@ -1,0 +1,34 @@
+{
+  "siteTitle": "Antonis Kartapanis",
+  "brand": "Antonis Kartapanis",
+  "brandMark": "AK",
+  "home": "index.html",
+  "favicon": "assets/tamu-atm-favicon.svg",
+  "stylesheet": "styles.css",
+  "pages": [
+    {
+      "label": "Home",
+      "title": "Home",
+      "output": "index.html",
+      "source": "content/index.html"
+    },
+    {
+      "label": "Research",
+      "title": "Research",
+      "output": "research.html",
+      "source": "research-data"
+    },
+    {
+      "label": "Biography",
+      "title": "Biography",
+      "output": "biography.html",
+      "source": "content/biography.html"
+    },
+    {
+      "label": "CV",
+      "title": "CV",
+      "output": "cv.html",
+      "source": "content/cv.html"
+    }
+  ]
+}

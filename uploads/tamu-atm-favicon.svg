@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="ATM logo favicon" shape-rendering="geometricPrecision">
+  <rect width="96" height="96" rx="16" fill="#500000"></rect>
+  <g fill="#ffffff">
+    <path d="M12 72 26 22h12l14 50H39l-2.4-10H27.4L25 72H12Zm17.2-21h5.6L32 39.2 29.2 51Z"></path>
+    <path d="M56 22h28v11H74v39H62V33H56V22Z"></path>
+    <path d="M50 72V22h13l7 20 7-20h13v50H78V43.5L72 60h-4L62 43.5V72H50Z" opacity="0.94"></path>
+    <path d="M39 22h28v12H57v38H45V34h-6V22Z"></path>
+  </g>
+</svg>

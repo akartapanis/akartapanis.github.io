@@ -4,14 +4,14 @@
   "brand": "Antonis Kartapanis",
   "brandMark": "AK",
   "home": "index.html",
-  "favicon": "assets/tamu-atm-favicon.png",
+  "favicon": "assets/tamu-atm-favicon.svg",
   "stylesheet": "styles.css",
   "ogImage": "assets/og-card.png",
   "defaultDescription": "Antonis Kartapanis — Associate Professor, Texas A&M University.",
   "pages": [
     {
       "label": "Home",
-      "title": "Home",
+      "title": "Texas A&M",
       "output": "index.html",
       "source": "content/index.html",
       "description": "Antonis Kartapanis — Associate Professor, Texas A&M University."

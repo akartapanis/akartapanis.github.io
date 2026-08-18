@@ -1,16 +1,47 @@
 [
   {
-    "title": "How Information from Securities Class Action Filings is Impounded into Stock Prices",
-    "authors": [
-      "Dain Donelson",
-      "Christopher Yust"
-    ]
-  },
-  {
     "title": "Audits of Non-GAAP Earnings: Evidence from Adjusted EBITDA in Segment Disclosures",
     "authors": [
       "Matthew Ege",
       "Benjamin Whipple"
+    ]
+  },
+  {
+    "title": "Investor Engagement on Corporate Earnings Conference Calls: Evidence from Investor Comments",
+    "authors": [
+      "Lucile Faurel",
+      "Artur Hugon",
+      "Partha Mohanram"
+    ]
+  },
+  {
+    "title": "Are Auditors Penalized for Issuing Adverse Internal Control Opinions?",
+    "authors": [
+      "Matthew Ege",
+      "David Stroud",
+      "Lisa Tiplady"
+    ]
+  },
+  {
+    "title": "Do Auditors Improve Audit Quality through Learning from Audit Failures? Evidence from Big 4 Accounting Firms’ Views of SEC Filings",
+    "authors": [
+      "Zongyu Li",
+      "David Stroud",
+      "Dechun Wang"
+    ]
+  },
+  {
+    "title": "Customers as Information Intermediaries: Personal Experience and Online Equity Research",
+    "authors": [
+      "Hengda Jin",
+      "Brady Twedt"
+    ]
+  },
+  {
+    "title": "Learning in the Digital Crowd? The Evolution of User Behavior on Social Media",
+    "authors": [
+      "Hengda Jin",
+      "Brady Twedt"
     ]
   },
   {
@@ -21,33 +52,17 @@
     ]
   },
   {
-    "title": "“Does the Audit Market Penalize Auditors for Issuing Adverse Internal Control Opinions?”",
+    "title": "Secondhand Scandal, Firsthand Reform: The Effect of Directors’ Post-Fraud Experience on Interlocked Firm Transparency",
     "authors": [
-      "Matthew Ege",
-      "David Stroud"
+      "Jeremy Lee",
+      "Christopher Yust"
     ]
   },
   {
-    "title": "Improving Audit Quality through Learning from Audit Failures: Evidence from the Big 4 Accounting Firms",
+    "title": "Alternative Data and Disclosure Demand",
     "authors": [
-      "Zongyu Li",
-      "David Stroud",
-      "Dechun Wang"
-    ]
-  },
-  {
-    "title": "“Product Experience and Analyst Research: Evidence from Seeking Alpha”",
-    "authors": [
-      "Hengda Jin",
-      "Brady Twedt"
-    ]
-  },
-  {
-    "title": "“Investor Engagement on Corporate Earnings Conference Calls: Evidence from Investor Comments”",
-    "authors": [
-      "Lucile Faurel",
-      "Artur Hugon",
-      "Partha Mohanram"
+      "Eunjee Kim",
+      "Kimberlyn Munevar"
     ]
   }
 ]

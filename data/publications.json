@@ -28,13 +28,18 @@
     },
     "links": [
       {
+        "label": "Online Appendix",
+        "url": "https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2F1911-3846.12907&file=care12907-sup-0001-AppendixS1.pdf"
+      },
+      {
         "label": "Code for final dataset",
         "url": "https://github.com/akartapanis/The-merits-of-securities-litigation-and-corporate-reputation"
       }
     ],
     "abstract": "We explore how securities litigation affects corporate reputation. Experts remain concerned that nonmeritorious securities class actions—those that will be dismissed or settled for nuisance amounts—cause reputational damage. While several prior studies find reputational costs for nonmeritorious cases, they generally use indirect measures based on returns or total market losses, which are mechanically associated with securities litigation elements. In contrast, we first use a relatively direct reputation measure from Fortune’s “Most Admired Companies” list. We find significant reputational damage after meritorious litigation, with the strongest cases having the largest effects. However, we find no evidence of reputational damage after nonmeritorious litigation. We then find similar inferences using market-based measures of reputational damage—changes in earnings response coefficients and institutional investor holdings—that are not mechanically linked to securities fraud elements. We also find that Fortune’s reputational damage measure is associated with more negative returns around the litigation filing date. We show possible mechanisms for our results as initial legal filings contain information allowing market participants to assess case merits. Our results imply reputational damage is primarily due to fraud, which securities litigation helps reveal to the market, rather than litigation itself. Thus, reputational damage is not an issue in over 70% of securities class actions due to the high frequency of nonmeritorious cases.",
     "notes": [
-      "Presented at Michigan State, the 2023 Penn State Accounting Conference, and the Texas A&M Capital Markets Reading Group"
+      "Presented at Michigan State, the 2023 Penn State Accounting Conference, and the Texas A&M Capital Markets Reading Group",
+      "Featured on Columbia Law School's [CLS Blue Sky Blog](https://clsbluesky.law.columbia.edu/2023/10/11/when-does-securities-litigation-affect-corporate-reputation/) on Corporations and the Capital Markets"
     ]
   },
   {
@@ -47,6 +52,10 @@
       "url": "https://www.doi.org/10.1017/S0022109022001508"
     },
     "links": [
+      {
+        "label": "Online Appendix",
+        "url": "https://static.cambridge.org/content/id/urn:cambridge.org:id:article:S0022109022001508/resource/name/S0022109022001508sup001.pdf"
+      },
       {
         "label": "Data",
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSeH-4JgKb5UKs5LvdUxAvpWvVUodi9nJPodYeyU6SEkv9KrMA/viewform?usp=sf_link"
@@ -102,7 +111,8 @@
     "abstract": "Most accounting studies use only public enforcement actions (SEC cases) to measure accounting fraud. However, private cases (securities class actions) also play an important enforcement role. We discuss the legal standards and processes for both public and private enforcement regimes, emphasize the importance of screening cases for credible fraud allegations, and show both yield credible fraud measures. Further, we demonstrate these research design choices affect inferences from prior research and a hypothetical research setting. Finally, we show common measures of accounting irregularities using Audit Analytics to proxy for fraud result in significant false positives and negatives and develop a fraud prediction model for use in future research. We recommend using both public and private enforcement with appropriate screening when examining accounting fraud to reduce Type I and II errors, or reporting the sensitivity of findings across regimes. This is particularly important given the reduction in accounting-related enforcement after 2005.",
     "notes": [
       "Presented at the University of Texas at Austin, Texas A&M University, and the University of Rochester.",
-      "Featured on [Harvard Law School's Forum on Corporate Governance](https://corpgov.law.harvard.edu/2021/03/18/measuring-accounting-fraud-and-irregularities-using-public-and-private-enforcement/)"
+      "Featured on [Harvard Law School's Forum on Corporate Governance](https://corpgov.law.harvard.edu/2021/03/18/measuring-accounting-fraud-and-irregularities-using-public-and-private-enforcement/)",
+      "Featured for CPE by [CalCPA](https://community.calcpa.org/s/detail?recId=a0M6R00000jl0Hv)"
     ]
   },
   {

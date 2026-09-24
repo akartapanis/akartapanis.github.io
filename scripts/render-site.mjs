@@ -139,6 +139,7 @@ function renderWorkingPaper(paper) {
   return [
     '<article class="paper-card">',
     `  <h2>${renderTitleWithAuthors(paper)}</h2>`,
+    ...(paper.notes?.length ? [renderNotes(paper)] : []),
     '</article>'
   ].join('\n');
 }

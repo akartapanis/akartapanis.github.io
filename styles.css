@@ -150,6 +150,7 @@ p, li { font-size: var(--body-text); }
   stroke-linejoin: round;
 }
 .link-icon svg path:only-child { fill: currentColor; stroke: none; }
+.link-icon .link-logo { display: block; width: 24px; height: 24px; }
 
 .page-title { padding: 70px 0 24px; }
 .research-list { display: grid; gap: 18px; padding-bottom: 28px; }
@@ -244,7 +245,8 @@ p, li { font-size: var(--body-text); }
   background: var(--card);
   box-shadow: var(--shadow);
 }
-.cv-frame-card iframe {
+.cv-frame-card iframe,
+.cv-frame-card object {
   display: block;
   width: 100%;
   height: min(82vh, 980px);
@@ -252,6 +254,8 @@ p, li { font-size: var(--body-text); }
   border: 0;
   background: white;
 }
+
+.cv-fallback { display: grid; place-items: center; align-content: center; gap: 14px; min-height: inherit; padding: 40px 20px; text-align: center; color: var(--muted); }
 
 .footer { display: flex; justify-content: space-between; gap: 20px; padding: 30px 0 50px; color: var(--muted); }
 .footer a { color: var(--muted); text-decoration: none; }
@@ -266,7 +270,8 @@ p, li { font-size: var(--body-text); }
     max-width: 360px;
     margin: 0 0 20px;
   }
-  .cv-frame-card iframe { min-height: 620px; }
+  .cv-frame-card iframe,
+  .cv-frame-card object { min-height: 620px; }
 }
 
 @media (max-width: 520px) {

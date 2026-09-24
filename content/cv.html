@@ -1,18 +1,21 @@
 <section class="section-shell cv-page">
   <div class="cv-actions cv-download-only">
-    <a class="button" href="https://drive.google.com/uc?id=1GmVceCbVcDprSvhiltGuWsL5rdiq6BQ8&amp;export=download">Download PDF</a>
+    <a class="button" href="assets/cv.pdf" download="Antonis Kartapanis - CV.pdf">Download PDF</a>
+    <a class="button" href="assets/cv.pdf" target="_blank" rel="noopener">Open in new tab</a>
   </div>
 
   <div class="cv-frame-card" aria-label="CV preview">
-    <iframe src="https://drive.google.com/file/d/1GmVceCbVcDprSvhiltGuWsL5rdiq6BQ8/preview" title="CV preview" allow="autoplay"></iframe>
+    <object data="assets/cv.pdf#view=FitH" type="application/pdf" title="CV preview">
+      <div class="cv-fallback">
+        <p>Your browser can't show the CV here.</p>
+        <a class="button" href="assets/cv.pdf" target="_blank" rel="noopener">Open the CV (PDF)</a>
+      </div>
+    </object>
   </div>
 
   <div class="cv-print-note" aria-hidden="true">
     <h1>Antonis Kartapanis — Curriculum Vitae</h1>
-    <p>The most current version of this CV is hosted as a PDF and viewable on the website.</p>
-    <p>Direct PDF download:</p>
-    <p class="cv-print-url">https://drive.google.com/uc?id=1GmVceCbVcDprSvhiltGuWsL5rdiq6BQ8&amp;export=download</p>
-    <p>Online viewer:</p>
-    <p class="cv-print-url">https://drive.google.com/file/d/1GmVceCbVcDprSvhiltGuWsL5rdiq6BQ8/view</p>
+    <p>The most current version of this CV is available as a PDF:</p>
+    <p class="cv-print-url">https://akartapanis.github.io/assets/cv.pdf</p>
   </div>
 </section>

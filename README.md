@@ -175,5 +175,7 @@ The JSON and template files make updates easier and avoid hand-editing repeated 
 - `styles.css` — shared visual design
 - `assets/headshot.jpg` — Home page profile image
 - `assets/bio-photo.jpg` — Biography page photo
-- `assets/tamu-atm-favicon.svg` — browser tab icon
+- `assets/cv.pdf` — CV shown on the CV page (to update, replace this file with the new PDF, keeping the name `cv.pdf`)
+- `assets/tamu-atm-box.svg` — browser tab icon (official Texas A&M box logo)
+- `assets/tamu-atm-maroon.svg` — maroon Texas A&M logo used on the homepage button
 - `index.html`, `research.html`, `biography.html`, `cv.html` — generated static pages

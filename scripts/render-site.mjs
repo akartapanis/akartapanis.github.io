@@ -167,10 +167,90 @@ function renderResearchMain() {
 `.trim();
 }
 
+// The home page is served at the site root, so link and canonicalize it as
+// "/" rather than "/index.html". One URL per page keeps search engines from
+// splitting signals between two addresses for the same page.
+function isHomeOutput(output) {
+  return output === 'index.html';
+}
+
+function linkHref(output) {
+  return isHomeOutput(output) ? './' : output;
+}
+
+function pageUrl(site, output) {
+  const base = site.siteUrl || '';
+  if (isHomeOutput(output)) return base.endsWith('/') ? base : `${base}/`;
+  return joinUrl(base, output);
+}
+
+function renderStructuredData(site, page) {
+  const person = site.person;
+  if (!person || !isHomeOutput(page.output)) return '';
+
+  const homeUrl = pageUrl(site, page.output);
+  const data = {
+    '@context': 'https://schema.org',
+    '@type': 'ProfilePage',
+    url: homeUrl,
+    mainEntity: {
+      '@type': 'Person',
+      '@id': `${homeUrl}#person`,
+      name: person.name,
+      url: homeUrl,
+      ...(person.image ? { image: joinUrl(site.siteUrl || '', person.image) } : {}),
+      ...(person.email ? { email: `mailto:${person.email}` } : {}),
+      ...(person.jobTitle ? { jobTitle: person.jobTitle } : {}),
+      ...(person.affiliation ? {
+        worksFor: {
+          '@type': 'CollegeOrUniversity',
+          name: person.affiliation,
+          ...(person.affiliationUrl ? { url: person.affiliationUrl } : {}),
+          ...(person.department ? { department: { '@type': 'Organization', name: person.department } } : {})
+        }
+      } : {}),
+      ...(person.alumniOf?.length ? {
+        alumniOf: person.alumniOf.map((name) => ({ '@type': 'CollegeOrUniversity', name }))
+      } : {}),
+      ...(person.knowsAbout?.length ? { knowsAbout: person.knowsAbout } : {}),
+      ...(person.sameAs?.length ? { sameAs: person.sameAs } : {})
+    }
+  };
+
+  // Escape "<" so nothing inside the JSON can close the script tag early.
+  const json = JSON.stringify(data, null, 2).replaceAll('<', '\\u003c');
+  return `\n  <script type="application/ld+json">\n${indent(json, 2)}\n  </script>\n`;
+}
+
+function renderSitemap(site) {
+  const urls = site.pages.map((page) => [
+    '  <url>',
+    `    <loc>${escapeHtml(pageUrl(site, page.output))}</loc>`,
+    '  </url>'
+  ].join('\n'));
+  return [
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    ...urls,
+    '</urlset>',
+    ''
+  ].join('\n');
+}
+
+function renderRobots(site) {
+  return [
+    'User-agent: *',
+    'Allow: /',
+    '',
+    `Sitemap: ${joinUrl(site.siteUrl || '', 'sitemap.xml')}`,
+    ''
+  ].join('\n');
+}
+
 function renderNav(site, currentOutput) {
   return site.pages.map((page) => {
     const active = page.output === currentOutput ? ' class="active"' : '';
-    return `        <a${active} href="${page.output}">${page.label}</a>`;
+    return `        <a${active} href="${linkHref(page.output)}">${page.label}</a>`;
   }).join('\n');
 }
 
@@ -180,7 +260,7 @@ function renderPage(site, template, page) {
     : readText(page.source);
 
   const description = page.description || site.defaultDescription || '';
-  const canonicalUrl = joinUrl(site.siteUrl || '', page.output);
+  const canonicalUrl = pageUrl(site, page.output);
   const ogImageUrl = joinUrl(site.siteUrl || '', site.ogImage || '');
 
   const replacements = {
@@ -190,7 +270,8 @@ function renderPage(site, template, page) {
     ogImageUrl: escapeAttr(ogImageUrl),
     favicon: site.favicon,
     stylesheet: site.stylesheet,
-    home: site.home,
+    home: linkHref(site.home),
+    structuredData: renderStructuredData(site, page),
     brand: site.brand,
     brandMark: site.brandMark,
     nav: renderNav(site, page.output),
@@ -211,3 +292,8 @@ for (const page of site.pages) {
   writeText(page.output, renderPage(site, template, page));
   console.log(`Rendered ${page.output}`);
 }
+
+writeText('sitemap.xml', renderSitemap(site));
+console.log('Rendered sitemap.xml');
+writeText('robots.txt', renderRobots(site));
+console.log('Rendered robots.txt');

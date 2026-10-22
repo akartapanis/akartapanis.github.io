@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://akartapanis.github.io/sitemap.xml

@@ -7,35 +7,62 @@
   "favicon": "assets/tamu-atm-box.svg",
   "stylesheet": "styles.css",
   "ogImage": "assets/og-card.png",
-  "defaultDescription": "Antonis Kartapanis — Associate Professor, Texas A&M University.",
+  "defaultDescription": "Antonis Kartapanis, Associate Professor of Accounting at Texas A&M University's Mays Business School.",
+  "person": {
+    "name": "Antonis Kartapanis",
+    "jobTitle": "Associate Professor of Accounting",
+    "department": "James Benjamin Department of Accounting, Mays Business School",
+    "affiliation": "Texas A&M University",
+    "affiliationUrl": "https://www.tamu.edu/",
+    "image": "assets/headshot.jpg",
+    "email": "akartapanis@mays.tamu.edu",
+    "knowsAbout": [
+      "Accounting",
+      "Securities litigation",
+      "SEC enforcement",
+      "Auditing",
+      "Financial reporting fraud",
+      "Financial misreporting",
+      "Non-GAAP reporting",
+      "Financial social media"
+    ],
+    "alumniOf": [
+      "The University of Texas at Austin"
+    ],
+    "sameAs": [
+      "https://scholar.google.com/citations?user=XXyv4EcAAAAJ",
+      "https://mays.tamu.edu/directory/akartapanis",
+      "https://github.com/akartapanis"
+    ]
+  },
   "pages": [
     {
       "label": "Home",
-      "title": "Texas A&M",
+      "title": "Accounting Professor, Texas A&M",
       "output": "index.html",
       "source": "content/index.html",
-      "description": "Antonis Kartapanis — Associate Professor, Texas A&M University."
+      "description": "Antonis Kartapanis, Associate Professor of Accounting at Texas A&M's Mays Business School. Research on securities litigation, fraud, and financial misreporting."
     },
     {
       "label": "Research",
       "title": "Research",
       "output": "research.html",
       "source": "research-data",
-      "description": "Publications, accepted papers, and selected working papers by Antonis Kartapanis."
+      "description": "Publications and working papers by Antonis Kartapanis (Texas A&M) on securities litigation, SEC enforcement, auditing, non-GAAP reporting, and accounting fraud."
     },
     {
       "label": "Biography",
       "title": "Biography",
       "output": "biography.html",
       "source": "content/biography.html",
-      "description": "Biography of Antonis Kartapanis."
+      "description": "Biography of Antonis Kartapanis: Fulbright scholar from Limassol, Cyprus, with a BBA, MPA, and PhD in Accounting from UT Austin and prior experience at Deloitte."
     },
     {
       "label": "CV",
       "title": "CV",
       "output": "cv.html",
       "source": "content/cv.html",
-      "description": "Curriculum vitae of Antonis Kartapanis."
+      "description": "Curriculum vitae of Antonis Kartapanis, Associate Professor of Accounting at Texas A&M University. Download the full CV as a PDF."
     }
   ]
 }

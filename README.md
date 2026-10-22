@@ -13,6 +13,10 @@ Generated HTML files (`index.html`, `research.html`, `biography.html`, and `cv.h
 - Run `node scripts/render-site.mjs` after any of those changes.
 - Commit both the source files you changed and the regenerated HTML files.
 
+The generator also writes `sitemap.xml` and `robots.txt` from the page list in `data/site.json`, and adds search-engine profile data (JSON-LD) to the home page from the `person` block in that file. Page titles and descriptions there are what Google shows in search results, so keep them specific.
+
+Only the built site is deployed: the GitHub Actions workflow excludes `content/`, `data/`, `templates/`, `scripts/`, `uploads/`, and this README from what gets published. If you add a Google Search Console verification file (e.g. `google1234abcd.html`), put it in the repo root and it will be published.
+
 In general, avoid hand-editing generated pages such as `index.html`, `research.html`, `biography.html`, and `cv.html` directly. Those files are overwritten by the generator. Make the change in `content/`, `data/`, or `templates/` instead, then regenerate.
 
 ## Preview locally
